@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('1.jpg.png'); /* Arka plan resminin yolu */
+    background-size: cover; /* Resmi tam ekran yapar */
+    background-position: center; /* Resmi ortalar */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(51, 51, 51, 0.8); 
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: rgba(17, 17, 17, 0.8); 
+}
+
+header {
+    background-color: rgba(135, 206, 235, 0.8); 
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #333;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    font-size: 3em; 
+}
+
+section {
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(135, 206, 235, 0.8); 
+    color: white;
+    border-top: 2px solid #333;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; 
+    }
+    
+    section {
+        padding: 10px;
+    }
+    
+    footer {
+        padding: 5px;
+    }
+}

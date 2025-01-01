@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: url('2.jpg.png') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  background: #ff6e00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.navbar .logo a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: bisque;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 8px;
+}
+
+.navbar ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 6px 13px;
+  transition: background 0.3s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  background: #ecdbcb;
+  border-radius: 2px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  user-select: none;
+}
+
+.center h1 {
+  color: black;
+  font-size: 70px;
+  font-weight: bold;
+  width: 900px;
+  text-align: center;
+}
+
+.center h2 {
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+  width: 885px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.center .buttons {
+  margin: 35px 280px;
+}
+
+.buttons button {
+  height: 50px;
+  width: 150px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffb3b3;
+  background: rgb(207, 96, 88);
+  border: solid 1px red;
+  cursor: pointer;
+  outline: none;
+  border-radius: 25px;
+  transition: background 0.3s;
+}
+
+.buttons button:hover {
+  background: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      height: auto;
+  }
+
+  .navbar ul {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .center h1 {
+      font-size: 2em;
+  }
+  
+  .center h2 {
+      font-size: 1.5em;
+  }
+
+  .buttons button {
+      font-size: 1em;
+      margin: 10px 0;
+  }
+}
