@@ -6,9 +6,9 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('1.jpg.png'); /* Arka plan resminin yolu */
-    background-size: cover; /* Resmi tam ekran yapar */
-    background-position: center; /* Resmi ortalar */
+    background-image: url('1.jpg.png'); 
+    background-size: cover; 
+    background-position: center; 
     margin: 0;
     padding: 0;
 }
